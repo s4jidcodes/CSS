@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS Practise set 1 -->
+
+    <title>Level-1</title>
+<link rel="stylesheet" href="index.css">
+<style>
+    #heading {color: rgb(64, 224, 115);}
+    /* now hamne internal and external 2 lag lag color diye but page par print hoga internal due to style tag priority is greater */
+
+    /* id selector */
+#div_22 {color: chartreuse;}
+
+/* element selector */
+p {color: blue;}
+
+/* class selector */
+.special heading {color: chocolate;}
+
+/* Group Selector  */
+#firstt , #secondd {color: rgb(255, 0, 106);}
+
+
+</style>
+</head>
+<body>
+    <!--Q.Create a heading and set the text color red. -->
+<h1 style="color: rgb(252, 4, 4);">This is my heading</h1><hr>
+<!-- Q. Create a div with id #heading,(html ka gyaan heading ke baad agar <div> tag use karte hai. toh horizontal rule lagate hai i.e [<hr> tag]) ) include CSS
+using all 3 ways LINE("line" yani style tag dekar ooper hi
+ <head> mai color define kardo), "<style> tag" dena na bhoole and 'EXTERNAL'(external css ka alag se banakr link karke color dena),
+    INLINE (body ke andar hi <style> tag dekar color kardena)
+and observe priority  -->
+
+<div id="heading">Heading</div><hr>
+<!--INLINE (body ke andar hi <style> tag dekar color kardena) mistake <h1 ke andar style tag /> -->
+<h1 style="color: gold;">This is my heading</h1><hr>
+<!-- priority inline> styleline>external   -->
+
+<!-- Q Create a div, paragraph and heading and use id
+Selector, element selector and class selector(ooper <style> tag mai saare selector ko color kardo)
+for them. -->
+
+<div id="div_22">DIV</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, praesentium!</p>
+<h2>Special Heading</h2><hr>
+
+<!-- Q Create two divs with id firstt and secondd and
+define color for both using group selector. -->
+
+<div id="firstt">firstt</div>
+<div id="secondd">secondd</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 'font-family' = likhne ka style (font) choose karna-->
+ <!--Definition:
+font-family CSS property text kis font me likha hoga ye decide karti hai.
+
+Points:
+1.Font ka naam batata hai (Arial, Segoe UI, etc.)
+2.Browser pehle first font try karta hai
+3.Agar first font na mile, next font use hota hai
+4.Last me generic family (serif / sans-serif) likhna zaroori hota hai
+5.Web-safe fonts har browser me proper dikhte hain-->
+
+    <title>font-family</title>
+    <style>
+#article{font-family: cursive;font-size: x-large;
+}
+#second{font-family: Georgia, 'Times New Roman', Times, serif;}
+#third{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    </style>
+</head>
+<body>
+    <p id="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, rem.</p><hr>
+    <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, ab.</p><hr>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, illum.</p>
+</body>
+</html>

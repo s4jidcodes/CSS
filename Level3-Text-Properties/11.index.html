@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Link se font aata hai, font-family se use hota hai--->
+    <!--Google Font Link + Font-Family
+
+steps:
+Google Font use karne ke liye 2 steps hote hain:
+1.Font ka link add karo (in head tag)
+2.font-family me same font ka naam likho as goole font name & given font name ko <style> tag mai id ke text decoration barcket mai likho  'fontname' with comma (, sans-serif) and make sure closing ; semicolon
+multiple link add kar sakte hai in <head> tag
+Points:
+1.Link tag font ko internet se load karta hai
+2.Font ka naam Google Fonts website se copy hota hai
+3.font-family ka naam exact same hona chahiye
+4.Last me generic family (sans-serif / serif) likhna good practice hai-->
+    <title>font link</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        h1{font-family: 'Bitcount Single', sans-serif;}/*text decoration barcket mai likho  'fontname' with comma (, sans-serif) and make sure closing ; semicolon*/
+#second {
+  font-family: 'Cairo', sans-serif;
+}
+
+    </style>
+</head>
+<body>
+     <h1 id="article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, rem.</h1><hr>
+    <p id="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, ab.</p><hr>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, illum.</p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Visibility property</title>
+    <style>
+        /*here selector .box kyu ?aur div{} kyu nhi ???
+
+        div {} vs .box – Difference
+
+div {} sabhi divs par style lagata hai
+
+.box sirf un elements par lagta hai jinke paas class="box" ho
+
+div element-based selector hai
+
+.box reusable aur flexible hai
+
+Professional layouts me .box zyada use hota hai
+
+basically yahan bhi. div{} likh sakte ho than class nhi likhna if class likha toh ".box" use karna.
+
+div {} → HTML me class ki zarurat nahi
+
+.box {} → HTML me class="box" compulsory
+aur class html tag. mai kab aata hai ? jab multiple same ho like box1,box2...*/
+.box{
+    height: 40px;
+    width: 40px; 
+}
+  #box1 {
+    background-color: aquamarine;
+  visibility: hidden;}
+  #box2 {
+    background-color: chartreuse;
+  }
+  #box3 {
+    background-color: coral;
+  }
+  </style>
+</head>
+<body>
+    <!-- here div mai clas aayega due to box repaeat ho rahe hai aur style mai .name (class selector use hoga)  -->
+
+    <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+    <div id="box3" class="box">box3</div>
+</body>
+</html>

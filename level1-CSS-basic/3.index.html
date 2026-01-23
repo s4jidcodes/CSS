@@ -1,0 +1,49 @@
+<!-- Meaning:
+Internal styling ka matlab hota hai
+CSS ko SAME HTML file ke andar likhna -->
+
+<!-- CSS <style> tag ke andar likhi jati hai -->
+<!-- wkt <style> tag hamesha <head> ke andar hota hai  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Internal CSS</title>
+
+    <!--  Testing Internal stycle CSS  -->
+    <style>
+        /* Ye CSS sirf isi page pe apply hogi ---> part-2 css  */
+
+        body {
+            background-color: lightyellow;
+        }
+              
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+/* <!-- Notes:
+1. Same selector ho to last CSS rule apply hota hai( means 2 bar para use kiya CSS wrong wo last ko hi only lega)
+2. <p> ke andar <p> likhna galat hai ( aur agr likhan hi nai toh class tag ka use hoga)
+3. Different style chahiye to class use karo ye sab # SELECTORS mai padenge -- and p ko replace by .first and .second>
+ */
+
+        .first {
+            color: green;
+            font-size: 18px;
+        }
+    .second {
+       color: black;
+       font-size: xx-large
+    }
+    </style>
+    <!-- Internal CSS end htmal part 1 -->
+
+</head>
+<body>
+
+<p class="first">First paragraph</p>
+<p class="second">Second paragraph</p>
+
+</body>
+</html>

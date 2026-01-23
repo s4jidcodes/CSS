@@ -1,0 +1,18 @@
+/* STEP 2: CSS FILE (style.css)   */
+
+/* Ye CSS jitni HTML files me link hogi
+   un sab pe apply hogi */
+
+body {
+    background-color: rgb(227, 173, 230);
+}
+
+h1 {
+    color: rgb(0, 139, 21);
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 18px;
+}

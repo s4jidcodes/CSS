@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--Syntax
+text-decoration: value;-->
+
+<!--Important Points:
+1.text-decoration sirf text / inline elements pe kaam karta hai
+2.Mostly links(hyperlinks) ka underline remove karne ke liye use hota hai
+3.Box ya div ke border pe effect nahi karta
+
+ Yaad 
+underline → niche
+overline → upar
+line-through → beech se cut
+
+Conclusion
+text-decoration text ke upar, niche ya beech me line lagane ya hatane ke kaam aata hai, specially 'hyperlinks ko clean look dene ke liye'.-->
+<title>Text decoration</title>
+<style>
+#box1{text-decoration: underline;}
+#box2{ background-color: chartreuse;
+    text-decoration: overline;}
+#box3{text-decoration: line-through;}
+</style>
+</head>
+<body>
+    <h1 id="box1" class="box">box1</h1>
+    <h3 id="box2" class="box">box2</h3>
+    <h3 id="box3" class="box">box3</h3>
+<a href="https://github.com/s4jidcodes" target="_blank">github</a><br>
+<a href="#" style="text-decoration: none;">google</a><br><!--# self link hai (kuch nhi)-->
+<a href="https://github.com/s4jidcodes" target="_blank" style="text-decoration: none;">github</a>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Icons Using Fonts
+points
+Font icons wo icons hote hain jo "font ke form me load" hote hain.
+Points:
+1.Font icons = icons jo text jaisa behave karte hain
+2.font-size se size change hota hai
+3.color se icon ka rang badalta hai
+4.Extra image ki zarurat nahi hoti
+5.Popular libraries/websites: Font Awesome, Google Icons-->
+
+    <title>Icons using fonts</title>
+    <!-- ICONS USING FONTS = icon bhi font jaisa hota hai -->
+
+<!-- STEP 1: Font Awesome link (HEAD me) -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+/* icon ka color aur size font jaisa change hota hai */
+.icon {
+  font-size: 30px;   /* icon ka size */
+  color: red;        /* icon ka color */
+}
+
+</style>
+
+</head>
+<body>
+    <!-- STEP 2: ICON USE (BODY me) -->
+<i class="fa-brands fa-wordpress" style="font-size: 50px;"></i>
+    <i class="fa-solid fa-house icon"></i><!--<i> for font icon and link ke sath icon likho take ooper color bhi ajay-->
+<i class="fa-solid fa-user icon"></i><!--class dekar sabko ek sath color and size diya-->
+<i class="fa-solid fa-envelope icon"></i>
+<i class="fa-brands fa-amazon icon"></i>
+
+</body>
+</html>
+<!--gyan-->
+<!--<i> Tag – Icons ke liye kyu use hota hai?
+
+Definition:
+<i> tag ka use icons ya italic-style text dikhane ke liye hota hai.
+Points:
+
+1.Font Awesome icons font ke form me hote hain
+2.<i> ek inline element hai (text ke sath baithta hai)
+3.Icons ko class ke through control kiya jata hai
+4.font-size aur color direct kaam karta hai
+5.<i> semantic nahi, sirf visual purpose ke liye use hota hai-->
