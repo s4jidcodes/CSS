@@ -1,0 +1,46 @@
+*{
+    margin: 0; padding: 0;}
+nav{padding: 5px;} 
+nav a{
+    text-decoration: none;/* nav ki underline hatane k liye*/
+    margin-left: 50px; /*to cretae gap(margin) on left between nav*/
+padding: 5px;} /**/
+
+header{
+    background-color: rgb(171, 243, 219);
+height: 30px;}
+
+#first{height: 100px; width: 100px;
+background-color: darkkhaki;
+border-radius: 50%;}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(121, 223, 180);
+    margin: 5px;
+display: inline-block;
+border: 3px solid;}
+
+#box2{
+    z-index: 2;
+    position: absolute;/*can move on scrolling*/
+    left: 40px;/*box 1 par box 2 aachuka hai left 40px*/
+}
+#container/* border de diye conatiner ka taki visible ho*/
+    {border: 3px solid black;
+    margin: 2px;
+    height: 120px;}
+
+    #box{/*box4 position fixed*/
+        position:fixed ;
+        right: 10px;
+    }
+
+    footer{/*footer ko bottom mai pahuchane k liye position and botton 'px' define karenge*/
+        position: fixed;
+        bottom: 0px;
+        background-color: grey;
+    }
+
+

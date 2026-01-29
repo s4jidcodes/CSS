@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>position property(Z-index)</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .container{
+            position: relative;}/**postion defiend*/
+            .box1, .box2{ /*class selector/ common box styles */
+                position: absolute;
+                background-color: ;
+                border: 3px dotted black;
+                height: 100px; width: 100px;
+                text-align: center;
+                font-size: 25px;
+            }
+            .box1{
+                background-color: blue;
+                left: 20px;
+                top: 60px;
+                z-index: 2;
+            }
+            .box2{
+                background-color: rgb(255, 111, 0);
+                left: 60px;
+                top: 20px;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <div class="box1">z-index 2</div>
+    <div class="box2">z-index 1</div>
+</body>
+</html>

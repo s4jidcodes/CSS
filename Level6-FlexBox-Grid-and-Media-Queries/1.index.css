@@ -1,0 +1,17 @@
+.container{
+    height: 110px;
+    width: 300px;
+    border: 1px solid black;
+}
+.box1, .box2{/*boxes common style*/
+    height: 100px; width: 100px;
+    margin: 5px;
+}
+.box1{
+    background-color: red;
+    float: right;/* means Box 1 right mai chala jayega*/
+}
+.box2{
+    background-color: blue;
+    float: left;/* means Box 1 left mai chala jayega*/
+}
