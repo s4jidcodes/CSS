@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Relative units(percentage)</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+#first{
+    height: 100px; width: 200px; background-color: blue;
+}
+#second{ height: 60%; width: 30%;/* % yani isko apni width or height. parent(#firstdiv) ka 60 percent rakhna hai(#seconddiv ko) if parenst 10% than child become: 6%;%*/
+background-color: aquamarine;}
+    </style>
+</head>
+<body>
+    <!--here ek din ke andar duhra div hai-->
+   <div id="first">first div
+     <div id="second">second div </div>
+   </div><!-- end div-->
+</body>
+</html>

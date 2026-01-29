@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--display: none element ko completely hide kar deta hai
+
+1.Element screen par nahi dikhta
+2.Element ki jagah bhi remove ho jati hai
+3.User element par click ya select nahi kar sakta
+4.Mostly menus, popups, buttons hide karne me use hota hai-->
+    
+    <title>Display property(None)</title>
+    <style>*{
+    margin: 0px; padding: 0px;
+}
+.box{
+    height: 100px;
+    width:100px;
+    margin: 5px;
+    background-color: springgreen;
+    }
+    #box1{display: none;}/*Element screen par nahi dikhta*/
+    </style>
+</head>
+<body>
+    <div id="box1" class="box"> Box 1</div>
+    <div id="Box2" class="box">Box 2</div>
+</body>
+</html>

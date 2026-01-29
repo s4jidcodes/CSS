@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Relative units(em)</title>
+    <!--em parent element ke font-size par depend karta hai-->
+    <style>
+body{
+    font-size: 100px;
+} /*body name diya with defined font size*/
+#first{
+    height: 200px; width: 200px;
+    background-color: darkslategrey;
+    font-size: 25px;} /*em -font size liye. let use  parent 25px */
+    #second{
+        background-color: gold;
+        width: 70%;
+        height: 50%;
+        font-size: 2em; /*child ne double kiya-by parent font size*value */
+    }
+    </style>
+</head>
+<body>
+    body 
+    <div id="first">first
+        <div id="second">second</div>
+    </div><!--div k andar div-->
+</body>
+</html>

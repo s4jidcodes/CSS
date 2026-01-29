@@ -3,8 +3,35 @@
 <head>
    
     <title>border(box sizing)</title>
+    <!--step.1 border (box siziing) define karo in class selector -->
+    <style>
+      *{
+            margin: 0; padding: 0;
+        }
+        .pad{
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+            margin: 5px;
+box-sizing: border-box;
+        }
+        #first{
+            border: 6px solid;
+            /*Note: border ke niche line mai border radius alaways*/
+            border-radius: 5px;
+            background-color: olivedrab;
+            box-sizing: border-box;/*border-box me padding & border same width/height ke andar fit hote hai*/
+        }
+        #second{border: 5px dotted red;
+            border-radius: 50%;
+            background-color: navajowhite;
+            box-sizing: content-box;/*content-box me padding & border extra size badhate hai*/
+            
+    </style>
+                
 </head>
 <body>
-    
+   <div id="first" class="pad">first</div>
+   <div id="second" class="pad">second</div>
 </body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Practice set -4-->
+    <title>practice set 4</title>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+#first1{height: 200px; width: 200px;
+background-color: rgb(247, 239, 230);}
+
+#button{height: 70px; width: 70px;/*button kaheight and width d=define kiye due to bola hai circle button chahiye */
+
+    padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 15px;
+padding-right: 15px;/* short mai ham padding 10px(top) 15px(bottom) 10px(left) 15px(right) aise bhi likh sakte hai one liner*/
+
+margin: 100px;
+border: 6px dotted red;
+border-radius: 50px;}
+
+.sailor{height: 100px; width: 100px;
+padding: 5px;/*padding and margin must define in class*/
+margin: 5px;
+border: 2px dotted greenyellow;
+background-color: rgb(230, 144, 32);}
+
+#box1{box-sizing: content-box;
+}/*extra size padding and border rahega*/
+
+#box2{box-sizing: border-box;}
+/*paddind and border same width mai fit hota hai/size control*/
+    </style>
+</head>
+<body>
+  <!--- Create a div with height and width 200px and
+observe different values in the box model by
+inspecting.-->
+<!--Create a button and give 10px padding to top
+and bottom and 15px on the sides.-->  
+
+<div id="first1">first</div>
+<br>
+<button id="button">Click me</button>
+
+<!--Add 100px margin to the button on all sides.-->
+<!--Add dotter border with color red and so much
+that the button becomes a circle.-->
+
+<!--Create two boxes with different box-sizing
+values and observe changes in box model.-->
+
+<div id="box1" class="sailor">box1</div>
+<div id="box2" class="sailor">box2</div>
+</body>
+</html>
