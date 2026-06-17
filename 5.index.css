@@ -1,0 +1,36 @@
+*{margin: 0;
+padding: 0;}
+.box{
+    height: 75px;
+    width: 75px;
+    border: 3px solid black;
+    margin-right: 5px;
+    flex-direction: row;
+flex-grow: 1
+}
+#heading{text-align: ;}
+#container{
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+
+}
+#box1{background-color: aqua;}
+#box2{ background-color: blueviolet;
+flex-grow: 1;}  /*--
+"remember": grow tabhi hoga jab container mai space hogi means if conatiner--> mai boxes fit rakha hai tab flexgrow work nhi karega. if container bahut bada hai boxes chote hai tab boxes ko grow kar sakte hai bada kar sakte hai */
+/* Notes:
+flex grow #box2 par apply kiya baki waise hi rahnge #box2 conatiner ka poora space le lega grow hojayega
+
+now hamne .box ko flex-box 1 dediya yaani sab equaly conatiner occupy kar lenge
+0 = no grow
+1 = normal grow
+Higher value = more grow
+*/
+#box3{background-color: goldenrod;}
+#box4{background-color: tomato;}
