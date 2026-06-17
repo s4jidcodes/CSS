@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Practice set-7</title>
+    <!--Create a webpage with a progress bar that showcases a smooth loading animation. The progress bar should fill up from 0 to 100% with a smooth transition effect and a slight bounce when it reaches 100%.-->
+    <style>
+    
+        .progress-container{
+            height: 30px;
+            width: 600px;
+            border: 2px solid black;
+            border-radius: 20px;
+            position: relative;
+            left: 4%;
+        }
+        .progress-bar{
+            height: 30px;
+            width: 600px;
+            background-color: forestgreen;
+            border-radius: 20px;
+            animation: animate_progress 3s ease-in-out 0s 4 normal;
+
+        }
+
+        @keyframes animate_progress{
+            0%{width:0%}
+            90%{width: 95%;}
+            95%{width: 70%;}  /* 95% se wapas 70% (bounce back) dikhane k liye*/
+            100%{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container"><div class="progress-bar"></div>
+</div>
+</body>
+</html>

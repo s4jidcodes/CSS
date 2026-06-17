@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Transform(Skew)</title>
+</head>
+<style>
+    .box{
+height: 100px;
+width: 100px;
+border: 2px solid black;
+border-radius: 6px;
+position: relative;
+top: 50px;
+left:50px;
+ transform: rotate(0deg); 
+transition: all 1s ease-out; /*shorthand mai likha*/
+}
+ 
+ #box1{
+    background-color: rgb(65, 234, 65);
+ }
+#box1:hover{
+transform:skew(20deg,10deg); /*x,y tilt*/
+ }
+
+ #box2{
+    background-color: rgb(68, 68, 243);
+ }
+#box2:hover{
+transform:skewX(45deg);}
+
+#box3{
+    background-color: rgb(221, 54, 54);}
+ 
+ #box3:hover{
+    transform:skewY(45deg);}
+ 
+</style>
+<body>
+    <div class="box" id="box1">skew(x,y)</div>
+    <div class="box" id="box2">skewX</div>
+    <div class="box" id="box3">skewY</div>
+</body>
+</html>

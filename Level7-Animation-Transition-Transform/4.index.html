@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Transform(scale)</title>
+</head>
+<style>
+    .box{
+height: 100px;
+width: 100px;
+border: 2px solid black;
+border-radius: 6px;
+background-color: plum;
+position: relative;
+top: 50px;
+left:50px;
+ transform: rotate(0deg); 
+transition: all 1s ease-out; /*shorthand mai likha*/
+}
+ 
+ #box1:hover{
+transform: scale(2); 
+ }
+
+#box2:hover{
+transform: scaleX(0.2);
+background-color: aqua; 
+ }
+ #box3:hover{
+    transform: scaleY(2);
+ }
+ 
+</style>
+<body>
+    <div class="box" id="box1">Scale(2)</div>
+    <div class="box" id="box2">Scalex(0.2)</div>
+    <div class="box" id="box3">scaley(2)</div>
+</body>
+</html>

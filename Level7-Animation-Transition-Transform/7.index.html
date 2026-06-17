@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+</head>
+<style>
+    .box{
+height: 100px;
+width: 100px;
+background-color: lightgreen;
+border: 2px solid black;
+border-radius: 10px;
+position: relative;
+top: 50px;
+left:50px;
+
+animation-name: ghumakkad;
+animation-duration: 4s;
+animation-timing-function: ease-in-out;
+animation-delay: 0s;
+animation-iteration-count: 10;
+animation-direction: alternate;
+}
+ 
+@keyframes ghumakkad {
+from{left: 400px;}
+    to{right: 300px;}
+ }
+
+</style>
+<body>
+    <div class="box" id="box1">Animation</div>
+    
+</body>
+</html>
+
+<!--- IMP GYAAAN---
+ "from-to"  simple animation ke liye use hota hai 
+
+  Agar animation ko "multiple steps" me control karna ho
+   to % (percentage) use karte hain 
+
+   Example:
+   Total duration = 4s (jo ham define kiye hai)
+
+   0%   = animation start
+   50%  = animation ka half part
+   100% = animation end
+
+   Har % par alag position de sakte hain
+   isse movement zyada control hoti hai -->
+
+   <!-- 0%   = Mumbai
+        50%  = Lonavala
+       100% = Pune
+
+    "from → to" me sirf: Mumbai → Pune dikhai deta hai.
+
+Lekin % use karoge to beech ke stops bhi define kar sakte ho 
+
+INSHORT
+% = animation ka roadmap
+ from-to = direct start aur end point-->
